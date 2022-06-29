@@ -20,5 +20,5 @@ from authorization.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('enter/', index, name='home'),
-    path('login/', include('django.contrib.auth.urls'), name='login'),
+    path('accounts/', include('django.contrib.auth.urls'), name='login'),
 ]
